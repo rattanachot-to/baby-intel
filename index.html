@@ -35,5 +35,11 @@
         src="https://script.google.com/macros/s/AKfycbw9Ky0Nc9RzTI7kRgukKWBDAeUh4Mwi47_jBlm8ZlMttH78w_OYo51mtFNbNLEl6ksp/exec"
         allow="clipboard-write">
     </iframe>
+    <script>
+        if (window.location.search) {
+            var f = document.getElementById('gasIframe');
+            f.src = f.src + window.location.search;
+        }
+    </script>
 </body>
 </html>
